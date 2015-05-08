@@ -9,6 +9,8 @@ Rails.application.routes.draw do
  
   root 'users#index'
   
+  mount GrapeSwaggerRails::Engine => '/swagger' 
+    
   
 
   # The priority is based upon order of creation: first created -> highest priority.
